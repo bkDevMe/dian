@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dian</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_title">验证码签到</string>
+    <string name="title_comfirm">确定</string>
+</resources>

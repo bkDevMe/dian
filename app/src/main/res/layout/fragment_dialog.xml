@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="275dp"
+              android:layout_height="110dp"
+              android:background="@drawable/backgroud_dialog"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/verify_layout_dialog"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/verify_iv_dialog"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:gravity="center"
+            android:text="验证码"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qrcoe_layout_dialog"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/qrcode_iv_dialog"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:gravity="center"
+            android:text="二维码"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_layout_dialog"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/map_iv_dialog"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:gravity="center"
+            android:text="位置"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+</LinearLayout>

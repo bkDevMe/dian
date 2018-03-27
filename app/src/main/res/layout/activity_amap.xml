@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bottom_shape">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_amap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="位置签到"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps2d.MapView>
+
+
+    <ImageButton
+        android:id="@+id/location_Ibtn_amap"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/layout_amap"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/location_ibtn_shape"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layout_amap"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/bottom_shape"
+        android:clickable="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_shape"
+            android:paddingRight="3dp"
+            >
+
+            <TextView
+                android:id="@+id/location_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="位置定位中..."
+                android:textColor="#000023"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/check_btn_amap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/check_btn_shape"
+                android:enabled="false"
+                android:text="签到"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+</RelativeLayout>
